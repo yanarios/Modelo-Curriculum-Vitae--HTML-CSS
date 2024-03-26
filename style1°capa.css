@@ -1,0 +1,52 @@
+body{
+    background-image: url(fondo-abstracto-textura_1258-30523.jpeg)
+}
+legend{
+    font-size: 40px;
+}
+.color1 {
+    background-color: rgba(138, 162, 207, 0.5);
+    width: auto;
+}
+h1 {
+    font-size: 50px;
+    font-family: cursive;
+    text-align: center;
+}
+.habi {
+    font-size: 30px;
+}
+.habilidades{
+    font-size: 3vw;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left {
+    flex: 1;
+    padding-right: 20px;
+    font-size: 2vw;
+}
+
+.right {
+    flex: 1;
+    text-align:center;
+    margin-right: 10px;
+    font-size: 15vw
+}
+
+.right img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+button {
+    width: 150px;
+    font-size: 30px;
+    text-align: center;
+    background-color: rgb(115, 93, 236);
+}

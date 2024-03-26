@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>curriculum vitae</title>
+    <link href="style1°capa.css" rel="stylesheet">
+    <style>
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        border: 1px solid black;
+      }
+      th, td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: left;
+      }
+    </style>
+  </head>
+ <body>
+    <h1>CURRICULUM VITAE</h1>
+    <form action="procesar.php" method="get">
+       <fieldset class="color1">
+         <legend>Datos personales y de contacto</legend>
+         <br>
+        <div class="container">
+          <div class="left">
+           <label>Nombres</label>
+           <input type="text" required>
+           <br><br>
+           <label>Apellido</label>
+           <input type="text" required>
+           <br><br>
+           <label>Identificacion</label>
+           <br>
+           <label for="opciones">Tipo de identificacion</label>
+           <select id="opciones" name="opciones">
+             <option value="opcion1">DNI</option>
+             <option value="opcion2">Cedula de identidad</option>
+             <option value="opcion3">Libreta Civica</option>
+             <option value="opcion4">Libreta de Enrolamiento</option>
+             <option value="opcion5">Pasaporte</option>
+           </select>
+           <input type="number" required>
+           <br><br>
+           <label for="fecha_nac">Fecha de Nacimiento</label>
+           <input type="date" required name="fecha_nac" id="fecha_nac">
+           <br><br>
+           <label>Genero</label>
+           <input type="radio" name="sexo" value="hombre" id="hombre" checked="checked">
+           <label for="hombre">Hombre</label>
+           <input type="radio" name="sexo" value="mujer" id="mujer">
+           <label for="mujer">Mujer</label>
+           <input type="radio" name="sexo" value="otro" id="otro">
+           <label for="otro">Otro</label>
+           <br><br>
+           <label>Telefono</label>
+           <input type="tel" placeholder="caracteristica(+54...)" required>
+           <input type="tel" placeholder="numero sin el 15(1234...)" required>
+           <br><br>
+           <label>Correo electronico</label>
+           <input type="email" placeholder="abc@gmail.com">
+         </div>
+         <div class="rigth">
+             <img src="iconfinder-photo-4341311_120543.png" width="50%">
+             <br>
+             <input type="file" name="archivo">
+          </div>
+        </div>
+        </fieldset>
+        <br>
+       <fieldset class="color1">
+         <legend>Perfil Profesional</legend>
+         <label>Descripcion breve de tu perfil profesional</label>
+         <textarea rows=”10” cols=”200” name=”texto” ></textarea>
+         <br><br>
+         <label>Cargue su CV aqui</label>
+         <input type="file" name="archivo">
+       </fieldset>
+       <br><br>
+       <fieldset class="color1">
+        <legend>Experiencias profesionales</legend>
+        <table>
+            <tr>
+                <th>Cargo</th>
+                <th>Nombre de la empresa</th>
+                <th>Funciones y logros</th>
+                <th>Desde</th>
+                <th>Hasta</th>
+            </tr>
+            <tr>
+                <td><input type="text" name="cargo1"></td>
+                <td><input type="text" name="empresa1"></td>
+                <td><input type="text" name="funcion1"></td>
+                <td><input type="text" name="desde1"></td>
+                <td><input type="text" name="hasta1"></td>
+            </tr>
+            <tr>
+                <td><input type="text" name="cargo2"></td>
+                <td><input type="text" name="empresa2"></td>
+                <td><input type="text" name="funcion2"></td>
+                <td><input type="text" name="desde2"></td>
+                <td><input type="text" name="hasta2"></td>
+            </tr>
+            <tr>
+                <td><input type="text" name="cargo3"></td>
+                <td><input type="text" name="empresa3"></td>
+                <td><input type="text" name="funcion3"></td>
+                <td><input type="text" name="desde3"></td>
+                <td><input type="text" name="hasta3"></td>
+            </tr>
+        </table>
+     </fieldset>
+     <br><br>
+     <fieldset class="color1">
+        <legend>Estudios Realizados</legend>
+        <table>
+            <tr>
+                <th>Título</th>
+                <th>Nombre de la institución</th>
+                <th>Estado</th>
+            </tr>
+            <tr>
+                <td><input type="text" name="titulo1"></td>
+                <td><input type="text" name="institucion1"></td>
+                <td>
+                    <input type="radio" name="estado1" value="completo" id="completo1" checked="checked">
+                    <label for="completo1">completo</label>
+                    <br>
+                    <input type="radio" name="estado1" value="incompleto" id="incompleto1">
+                    <label for="incompleto1">incompleto</label>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="text" name="titulo2"></td>
+                <td><input type="text" name="institucion2"></td>
+                <td>
+                    <input type="radio" name="estado2" value="completo" id="completo2">
+                    <label for="completo2">completo</label>
+                    <br>
+                    <input type="radio" name="estado2" value="incompleto" id="incompleto2">
+                    <label for="incompleto2">incompleto</label>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="text" name="titulo3"></td>
+                <td><input type="text" name="institucion3"></td>
+                <td>
+                    <input type="radio" name="estado3" value="completo" id="completo3">
+                    <label for="completo3">completo</label>
+                    <br>
+                    <input type="radio" name="estado3" value="incompleto" id="incompleto3">
+                    <label for="incompleto3">incompleto</label>
+                </td>
+            </tr>
+        </table>
+     </fieldset>
+     <div class="habilidades">
+         <strong><h3>Habilidades</h3></strong>
+         <label for="rango">Adaptación al cambio</label>
+         <input type="range" name="range" id="range" value="25" min="1" max="100" step="1"><br>
+         <label for="rango">Creatividad</label>
+         <input type="range" name="range" id="range" value="25" min="1" max="100" step="1"><br>
+         <label for="rango">liderazgo</label>
+         <input type="range" name="range" id="range" value="25" min="1" max="100" step="1"><br>
+         <label for="rango">Trabajo en equipo</label>
+         <input type="range" name="range" id="range" value="25" min="1" max="100" step="1"><br>
+         <label for="rango">Atencion al cliente</label>
+         <input type="range" name="range" id="range" value="25" min="1" max="100" step="1"><br>
+         <label for="rango">responsabilidad</label>
+         <input type="range" name="range" id="range" value="25" min="1" max="100" step="1"><br>
+     </div>
+     <br><br>
+     <button type="submit">ENVIAR</button>
+    </form>
+  </body>
+</html>
